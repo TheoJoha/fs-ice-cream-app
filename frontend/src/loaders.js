@@ -1,4 +1,4 @@
-const URL = "http://localhost:4000"
+const URL = "http://localhost:3000"
 
 export const iceCreamsLoader = async () => {
     const response = await fetch(URL + "/icecreams")
