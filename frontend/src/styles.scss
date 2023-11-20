@@ -1,0 +1,126 @@
+// Define SASS variables
+$primary-color: #4d4d4d;
+$secondary-color: #fff;
+$accent-color: #f00;
+$gray-color: #888;
+
+// --------------------------
+// Header
+// --------------------------
+
+nav {
+    background-color: $primary-color;
+    color: $secondary-color;
+    display: flex;
+    justify-content: flex-start;
+  
+    a {
+      color: $secondary-color;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+  
+      div {
+        margin: 10px;
+        font-size: 24px;
+        font-weight: bold;
+      }
+    }
+  }
+
+// --------------------------
+// Index
+// --------------------------
+/* Define a style for the ice cream list */
+$margin-top: 25px;
+$box-padding: 20px;
+$border-radius: 10px;
+$box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+$box-width: 300px;
+
+.icecream-list {
+    margin-top: $margin-top;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+  }
+  
+  /* Define a style for the individual ice cream items */
+  .icecream {
+    margin: $margin-top/2;
+    padding: $box-padding;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+    background-color: $secondary-color;
+    max-width: $box-width;
+    width: $box-width;
+  }
+  
+  /* Define a style for the ice cream image */
+  .icecream img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  /* Define a style for the ice cream name */
+  .icecream h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  /* Define a style for the ice cream description */
+  .icecream p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: $gray-color;
+  }
+  
+  /* Define a style for the ice cream link */
+  .icecream a {
+    color: #555;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .icecream a:hover {
+    color: $accent-color;
+  }
+
+  // --------------------------
+// Create Form
+// --------------------------
+
+.create {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+}
+
+input {
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border: none;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+input[type="submit"] {
+  background-color: $gray-color;
+  color: $secondary-color;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: $primary-color;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 0, 0, 0.2);
+}
